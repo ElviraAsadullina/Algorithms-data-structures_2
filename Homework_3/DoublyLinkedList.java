@@ -82,9 +82,9 @@ public class DoublyLinkedList {
             }
             curNode = curNode.next;
         }
-        System.out.printf("\nPositives only list:     ");
+        printText("\nPositives only list:     ");
         printDoublyLinkedList(positive);
-        System.out.printf("\nNegatives only list:    ");
+        printText("\nNegatives only list:    ");
         printDoublyLinkedList(negative);
     }
 
@@ -95,5 +95,9 @@ public class DoublyLinkedList {
             System.out.print(currNode.value + "  ");
             currNode = currNode.next;
         }
+    }
+    public static void printText(String str)
+    {
+        System.out.printf(str);
     }
 }
