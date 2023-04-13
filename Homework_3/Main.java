@@ -13,13 +13,13 @@ public class Main {
         myList.addToTail(11);
         myList.addToTail(9);
         myList.addToTail(-1);
-        System.out.printf("Initial list:            ");
+        myList.printText("Initial list:            ");
         printDoublyLinkedList(myList);
         myList.divideIntoPositiveAndNegative();
-        System.out.printf("\nDuplicated evens list:   ");
+        myList.printText("\nDuplicated evens list:   ");
         myList.duplicateEvens();
         printDoublyLinkedList(myList);
-        System.out.printf("\nReversed list:          ");
+        myList.printText("\nReversed list:          ");
         myList.reverseDoublyLinkedList();
         printDoublyLinkedList(myList);
     }
