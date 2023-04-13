@@ -68,12 +68,12 @@ public class DoublyLinkedList {
             }
         }
     }
-    public DoublyLinkedList positivePlusNullList() {
+    public DoublyLinkedList positiveList() {
         DoublyLinkedList positive = new DoublyLinkedList();
         Node curNode = head;
         while (curNode != null) {
 
-            if (curNode.value >= 0) {
+            if (curNode.value > 0) {
                 positive.addToTail(curNode.value);
             }
             curNode = curNode.next;
