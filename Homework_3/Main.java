@@ -17,7 +17,7 @@ public class Main {
         System.out.printf("Initial list:            ");
         printDoublyLinkedList(myList);
         System.out.printf("\nPositives only list:     ");
-        printDoublyLinkedList(myList.positivePlusNullList());
+        printDoublyLinkedList(myList.positiveList());
         System.out.printf("\nNegatives only list:    ");
         printDoublyLinkedList(myList.negativeList());
         System.out.printf("\nDuplicated evens list:   ");
