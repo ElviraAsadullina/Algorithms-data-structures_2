@@ -6,7 +6,6 @@ import static Homework_3.DoublyLinkedList.printDoublyLinkedList;
 public class Main {
     public static void main(String[] args) {
         DoublyLinkedList myList = new DoublyLinkedList();
-//        DoublyLinkedList.Node node = new Node();
         myList.addToTail(8);
         myList.addToTail(-8);
         myList.addToTail(17);
@@ -16,10 +15,7 @@ public class Main {
         myList.addToTail(-1);
         System.out.printf("Initial list:            ");
         printDoublyLinkedList(myList);
-        System.out.printf("\nPositives only list:     ");
-        printDoublyLinkedList(myList.positiveList());
-        System.out.printf("\nNegatives only list:    ");
-        printDoublyLinkedList(myList.negativeList());
+        myList.divideIntoPositiveAndNegative();
         System.out.printf("\nDuplicated evens list:   ");
         myList.duplicateEvens();
         printDoublyLinkedList(myList);
