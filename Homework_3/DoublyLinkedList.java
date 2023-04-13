@@ -68,29 +68,24 @@ public class DoublyLinkedList {
             }
         }
     }
-    public DoublyLinkedList positiveList() {
+    public void divideIntoPositiveAndNegative() {
         DoublyLinkedList positive = new DoublyLinkedList();
+        DoublyLinkedList negative = new DoublyLinkedList();
         Node curNode = head;
         while (curNode != null) {
 
             if (curNode.value > 0) {
                 positive.addToTail(curNode.value);
             }
-            curNode = curNode.next;
-        }
-        return positive;
-    }
-    public DoublyLinkedList negativeList() {
-        DoublyLinkedList negative = new DoublyLinkedList();
-        Node curNode = head;
-        while (curNode != null) {
-
-            if (curNode.value < 0) {
+            else {
                 negative.addToTail(curNode.value);
             }
             curNode = curNode.next;
         }
-        return negative;
+        System.out.printf("\nPositives only list:     ");
+        printDoublyLinkedList(positive);
+        System.out.printf("\nNegatives only list:    ");
+        printDoublyLinkedList(negative);
     }
 
     public static void printDoublyLinkedList(DoublyLinkedList list)
