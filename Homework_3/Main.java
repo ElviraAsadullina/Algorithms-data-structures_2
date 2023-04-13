@@ -1,7 +1,5 @@
 package Homework_3;
 
-import Homework_3.DoublyLinkedList;
-
 
 import static Homework_3.DoublyLinkedList.printDoublyLinkedList;
 
