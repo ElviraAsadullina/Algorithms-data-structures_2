@@ -1,7 +1,5 @@
 package Homework_3;
 
-import Seminar3.LinkedList;
-import org.w3c.dom.Node;
 
 public class DoublyLinkedList {
     Node head;
